@@ -1,0 +1,310 @@
+#chrome-extension-mobile-viewer * {
+  font-family: arial;
+}
+#chrome-extension-mobile-viewer {
+  position: fixed;
+  z-index: 9999999999999;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background: rgba(0,0,0,.8);
+  display: none;
+  padding: 1.5rem;
+}
+#chrome-extension-mobile-viewer h4#close-ext-mobile-viewer{
+  top: 0;
+  color: white;
+  position: fixed;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  font-weight: 700;
+}
+#chrome-extension-mobile-viewer p {
+  color: white;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  display: inline;
+}
+#chrome-extension-mobile-viewer select {
+  width: 150px;
+  height: 28px;
+  background: transparent;
+  padding: 0 0 0 10px;
+  color: white;
+  border: 1px solid white;
+  margin-right: 40px;
+}
+
+#chrome-extension-mobile-viewer.open {
+  display: block;
+}
+#mobile-extension-viewer-device {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+#mobile-extension-viewer-device::-webkit-scrollbar {
+  display: none;
+}
+#mobile-extension-instructions {
+  position: fixed;
+  bottom: 15px;
+  left: 20px;
+}
+#mobile-extension-instructions p{
+  font-size: 11px;
+  color: white;
+}
+
+
+/*-----------------------
+//////// PHONES /////////
+-----------------------*/
+
+
+/*---------------
+----- APPLE -----
+---------------*/
+
+/* Iphone 6 */
+#mobile-extension-viewer-device[data-model="iphone_6"] {
+  width: 375px;
+  height: 667px;
+  transform: translate3d(-50%, -50%, 0px) scale(.6);
+}
+#mobile-extension-viewer-device[data-model="iphone_6"].landscape {
+  width: 667px;
+  height: 375px;
+}
+
+
+/* Iphone 6 Plus */
+#mobile-extension-viewer-device[data-model="iphone_6_plus"] {
+  width: 414px;
+  height: 736px;
+  transform: translate3d(-50%, -50%, 0px) scale(.6);
+}
+#mobile-extension-viewer-device[data-model="iphone_6_plus"].landscape {
+  height: 414px;
+  width: 736px;
+}
+
+/* Iphone 5 */
+#mobile-extension-viewer-device[data-model="iphone_5"] {
+  width: 320px;
+  height: 568px;
+  transform: translate3d(-50%, -50%, 0px) scale(.6);
+}
+#mobile-extension-viewer-device[data-model="iphone_5"].landscape {
+  width: 568px;
+  height: 320px;
+}
+
+/* Iphone 4 */
+#mobile-extension-viewer-device[data-model="iphone_4"] {
+  width: 320px;
+  height: 480px;
+  transform: translate3d(-50%, -50%, 0px) scale(.6);
+}
+#mobile-extension-viewer-device[data-model="iphone_4"].landscape {
+  width: 480px;
+  height: 320px;
+}
+
+
+/*--------------
+-----GOOGLE-----
+--------------*/
+
+/* Nexus 4 */
+#mobile-extension-viewer-device[data-model="nexus_4"] {
+  width: 384px;
+  height: 640px;
+  transform: translate3d(-50%, -50%, 0px) scale(.6);
+}
+#mobile-extension-viewer-device[data-model="nexus_4"].landscape {
+  width: 640px;
+  height: 384px;
+}
+
+/* Nexus 5 */
+#mobile-extension-viewer-device[data-model="nexus_5"] {
+  width: 360px;
+  height: 640px;
+  transform: translate3d(-50%, -50%, 0px) scale(.6);
+}
+#mobile-extension-viewer-device[data-model="nexus_5"].landscape {
+  width: 640px;
+  height: 360px;
+}
+
+/* Nexus 6 */
+#mobile-extension-viewer-device[data-model="nexus_6"] {
+  width: 412px;
+  height: 732px;
+  transform: translate3d(-50%, -50%, 0px) scale(.6);
+}
+#mobile-extension-viewer-device[data-model="nexus_6"].landscape {
+  width: 732px;
+  height: 412px;
+}
+
+
+/*---------------
+---- SAMSUNG ----
+---------------*/
+
+/* Galaxy (ALL) */
+#mobile-extension-viewer-device[data-model="galaxy"] {
+  width: 360px;
+  height: 640px;
+  transform: translate3d(-50%, -50%, 0px) scale(.7);
+}
+#mobile-extension-viewer-device[data-model="galaxy"].landscape {
+  width: 640px;
+  height: 360px;
+}
+
+
+/*---------------
+------NOKIA------
+---------------*/
+
+/* Lumina 520 */
+#mobile-extension-viewer-device[data-model="lumina_520"] {
+  height: 533px;
+  width: 320px;
+  transform: translate3d(-50%, -50%, 0px) scale(.8);
+}
+#mobile-extension-viewer-device[data-model="lumina_520"].landscape {
+  width: 533px;
+  height: 320px;
+}
+
+/* N9 */
+#mobile-extension-viewer-device[data-model="n9"] {
+  width: 360px;
+  height: 640px;
+  transform: translate3d(-50%, -50%, 0px) scale(.7);
+}
+#mobile-extension-viewer-device[data-model="n9"].landscape {
+  width: 640px;
+  height: 360px;
+}
+
+/*--------------
+------ LG ------
+--------------*/
+
+/* Optimus L70 */
+#mobile-extension-viewer-device[data-model="optimus_l70"] {
+  width: 384px;
+  height: 640px;
+  transform: translate3d(-50%, -50%, 0px) scale(.7);
+}
+#mobile-extension-viewer-device[data-model="optimus_l70"].landscape {
+  width: 640px;
+  height: 384px;
+}
+
+/*------------------------
+//////// TABLETS /////////
+------------------------*/
+
+/*---------------
+----- APPLE -----
+---------------*/
+
+/* iPad */
+#mobile-extension-viewer-device[data-model="ipad"] {
+  width: 772px;
+  height: 1024px;
+  transform: translate3d(-50%, -50%, 0px) scale(.6);
+}
+#mobile-extension-viewer-device[data-model="ipad"].landscape {
+  height: 772px;
+  width: 1024px;
+}
+
+
+/*--------------
+-----GOOGLE-----
+--------------*/
+
+/* Nexus 10 */
+#mobile-extension-viewer-device[data-model="nexus_10"] {
+  width: 800px;
+  height: 1280px;
+  transform: translate3d(-50%, -50%, 0px) scale(.5);
+}
+#mobile-extension-viewer-device[data-model="nexus_10"].landscape {
+  height: 800px;
+  width: 1280px;
+}
+/* Nexus 7 */
+#mobile-extension-viewer-device[data-model="nexus_7"] {
+  width: 600px;
+  height: 960px;
+  transform: translate3d(-50%, -50%, 0px) scale(.6);
+}
+#mobile-extension-viewer-device[data-model="nexus_7"].landscape {
+  height: 600px;
+  width: 960px;
+} 
+
+
+/*--------------
+-----AMAZON-----
+--------------*/
+
+/* Kindle Fire HDX */
+#mobile-extension-viewer-device[data-model="amazon_kind_fire_hdx"] {
+  width: 1600px;
+  height: 2560px;
+  transform: translate3d(-50%, -50%, 0px) scale(.25);
+}
+#mobile-extension-viewer-device[data-model="amazon_kind_fire_hdx"].landscape {
+  height: 1600px;
+  width: 2560px;
+}
+
+
+/* Scale down large devices if needed */
+@media only screen and (max-height: 800px) {
+  #mobile-extension-viewer-device[data-model="ipad"] {
+    transform: translate3d(-50%, -50%, 0px) scale(.45);
+  }
+  #mobile-extension-viewer-device[data-model="nexus_10"] {
+    transform: translate3d(-50%, -50%, 0px) scale(.35);
+  }
+  #mobile-extension-viewer-device[data-model="nexus_7"] {
+    transform: translate3d(-50%, -50%, 0px) scale(.45);
+  }
+  #mobile-extension-viewer-device[data-model="amazon_kind_fire_hdx"] {
+    transform: translate3d(-50%, -50%, 0px) scale(.20);
+  }
+  @media only screen and (max-height: 550px) {
+    #mobile-extension-viewer-device {
+      transform: translate3d(-50%, -50%, 0px) scale(.20);
+    }
+  }
+}
+
+
+
+/* RETINA DEVICES */
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+  #mobile-extension-viewer-device[data-model="iphone_6"],  #mobile-extension-viewer-device[data-model="iphone_6_plus"],  #mobile-extension-viewer-device[data-model="iphone_5"], #mobile-extension-viewer-device[data-model="iphone_4"] { 
+    transform: translate3d(-50%, -50%, 0px) scale(.65);
+  }
+  
+  
+}
